@@ -16,10 +16,16 @@ namespace State_Design_Pattern.Logic
         public int BookingID { get; set; }
 
         private CancellationTokenSource cancelToken;
+
+        private bool isNew;
        
         public Booking(MainWindow view)
         {
             View = view;
+            BookingID = new Random().Next();
+            ShowState("New");
+            View.ShowEntryPage();
+            isNew = true;
         }
 
         public void SubmitDetails(string attendee, int ticketCount)
@@ -29,12 +35,30 @@ namespace State_Design_Pattern.Logic
 
         public void Cancel()
         {
-           
+            if (isNew)
+            {
+                ShowState("Cancel");
+                View.ShowStatusPage("Canceled by user");
+                isNew = false;
+            }
+            else
+            {
+                View.ShowError("Closed bookings cannot be canceled");
+            }           
         }
 
         public void DatePassed()
         {
-
+            if (isNew)
+            {
+                ShowState("Cancel");
+                View.ShowStatusPage("Booking expired");
+                isNew = false;
+            }
+            else
+            {
+                View.ShowError("Closed bookings cannot be canceled");
+            }          
         }
 
         public void ProcessingComplete(Booking booking, ProcessingResult result)
