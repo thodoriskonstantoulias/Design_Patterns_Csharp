@@ -8,24 +8,30 @@ namespace State_Design_Pattern.Logic
 {
     class ClosedState : BookingState
     {
+        private string reasonClosed;
+        public ClosedState(string reason)
+        {
+            reasonClosed = reason;
+        }
         public override void Cancel(BookingContext booking)
         {
-
+            booking.View.ShowError("Invalid action", "Closed booking error");
         }
 
         public override void DatePassed(BookingContext booking)
         {
-
+            booking.View.ShowError("Invalid action", "Closed booking error");
         }
 
         public override void EnterDetails(BookingContext booking, string attendee, int ticketCount)
         {
-
+            booking.View.ShowError("Invalid action", "Closed booking error");
         }
 
         public override void EnterState(BookingContext booking)
         {
-
+            booking.ShowState("Closed");
+            booking.View.ShowStatusPage(reasonClosed);
         }
     }
 }
