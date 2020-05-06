@@ -2,6 +2,8 @@
 using Strategy_Pattern_First_Look.Business.Models;
 using System;
 
+//Strategy pattern : Create an interface for common behavior. Create classes that implement this interface. 
+//Create a context class that uses that interface. In main we dice whic concrete class to use and call the behavior through the interface.
 namespace Strategy_Pattern_First_Look
 {
     class Program
