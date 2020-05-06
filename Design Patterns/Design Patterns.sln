@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State Design Pattern", "State Design Pattern\State Design Pattern.csproj", "{C03AC3EA-118C-4480-A2D0-53637FDAD685}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State Design Pattern", "State Design Pattern\State Design Pattern.csproj", "{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy Design Pattern", "Strategy Design Pattern\Strategy Design Pattern.csproj", "{0981D6FC-CA23-4C7F-9C96-81892E047487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C03AC3EA-118C-4480-A2D0-53637FDAD685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C03AC3EA-118C-4480-A2D0-53637FDAD685}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C03AC3EA-118C-4480-A2D0-53637FDAD685}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C03AC3EA-118C-4480-A2D0-53637FDAD685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
