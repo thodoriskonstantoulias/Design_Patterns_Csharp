@@ -1,4 +1,5 @@
-﻿using Strategy_Pattern_First_Look.Business.Models;
+﻿using Strategy_Design_Pattern.Business.Strategies.SalesTax;
+using Strategy_Pattern_First_Look.Business.Models;
 using System;
 
 namespace Strategy_Pattern_First_Look
@@ -9,11 +10,14 @@ namespace Strategy_Pattern_First_Look
         {
             var order = new Order
             {
-                ShippingDetails = new ShippingDetails 
-                { 
-                    OriginCountry = "Sweden",
-                    DestinationCountry = "Sweden"
-                }
+                ShippingDetails = new ShippingDetails
+                {
+                    //OriginCountry = "la",
+                    //DestinationCountry = "la"
+                    DestinationState = "la"
+                },
+                //SalesTaxStrategy = new SwedenTax()
+                SalesTaxStrategy = new USATax()
             };
             
             order.LineItems.Add(new Item("CSHARP_SMORGASBORD", "C# Smorgasbord", 100m, ItemType.Literature), 1);
