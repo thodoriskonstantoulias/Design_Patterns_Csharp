@@ -1,4 +1,5 @@
-﻿using Strategy_Design_Pattern.Business.Strategies.SalesTax;
+﻿using Strategy_Design_Pattern.Business.Strategies.Invoice;
+using Strategy_Design_Pattern.Business.Strategies.SalesTax;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,6 +21,7 @@ namespace Strategy_Pattern_First_Look.Business.Models
 
         public ShippingDetails ShippingDetails { get; set; }
         public ISalesTaxStrategy SalesTaxStrategy { get; set; }
+        public IInvoiceStrategy InvoiceStrategy { get; set; }
 
         public decimal GetTax()
         {
@@ -29,6 +31,11 @@ namespace Strategy_Pattern_First_Look.Business.Models
             }
 
             return SalesTaxStrategy.GetTaxFor(this);
+        }
+
+        public void GetInvoice()
+        {
+            InvoiceStrategy.Generate(this);
         }
     }
 
