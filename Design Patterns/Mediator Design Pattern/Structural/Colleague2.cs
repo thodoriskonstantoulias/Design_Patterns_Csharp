@@ -4,9 +4,9 @@ namespace Mediator_Design_Pattern.Structural
 {
     public class Colleague2 : Colleague
     {
-        public Colleague2(Mediator mediator) : base(mediator)
-        {
-        }
+        //public Colleague2(Mediator mediator) : base(mediator)
+        //{
+        //}
 
         public override void HandleNotification(string message)
         {
