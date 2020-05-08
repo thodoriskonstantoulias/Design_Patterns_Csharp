@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State Design Pattern", "State Design Pattern\State Design Pattern.csproj", "{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy Design Pattern", "Strategy Design Pattern\Strategy Design Pattern.csproj", "{0981D6FC-CA23-4C7F-9C96-81892E047487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy Design Pattern", "Strategy Design Pattern\Strategy Design Pattern.csproj", "{0981D6FC-CA23-4C7F-9C96-81892E047487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator Design Pattern", "Mediator Design Pattern\Mediator Design Pattern.csproj", "{B8C09080-8AEC-4324-B90E-BD1FD85B4A80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0981D6FC-CA23-4C7F-9C96-81892E047487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C09080-8AEC-4324-B90E-BD1FD85B4A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C09080-8AEC-4324-B90E-BD1FD85B4A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C09080-8AEC-4324-B90E-BD1FD85B4A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C09080-8AEC-4324-B90E-BD1FD85B4A80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
